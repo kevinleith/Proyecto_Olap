@@ -1,0 +1,4 @@
+FROM mysql:latest
+WORKDIR /sesion
+ENV MYSQL_ROOT_PASSWORD=root
+COPY ecommerce.sql /docker-entrypoint-initdb.d/
